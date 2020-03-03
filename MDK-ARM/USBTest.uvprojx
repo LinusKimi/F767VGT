@@ -135,11 +135,11 @@
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
-            <DriverSelection>4107</DriverSelection>
+            <DriverSelection>4101</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>STLink\ST-LINKIII-KEIL_SWO.dll</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F767xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc; ../Drivers/STM32F7xx_HAL_Driver/Inc; ../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy; ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc; ../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc; ../Drivers/CMSIS/Device/ST/STM32F7xx/Include; ../Drivers/CMSIS/Include</IncludePath>
+              <IncludePath>../Inc;  ../Drivers/STM32F7xx_HAL_Driver/Inc;  ../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy;  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc;  ../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc;  ../Drivers/CMSIS/Device/ST/STM32F7xx/Include;  ../Drivers/CMSIS/Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -422,6 +422,31 @@
               <FileName>stm32f7xx_hal_msp.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/stm32f7xx_hal_msp.c</FilePath>
+            </File>
+            <File>
+              <FileName>paj7620u2.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Inc\paj7620u2.h</FilePath>
+            </File>
+            <File>
+              <FileName>paj7620u2_cfg.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Inc\paj7620u2_cfg.h</FilePath>
+            </File>
+            <File>
+              <FileName>paj7620u2_iic.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Inc\paj7620u2_iic.h</FilePath>
+            </File>
+            <File>
+              <FileName>paj7620u2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\paj7620u2.c</FilePath>
+            </File>
+            <File>
+              <FileName>paj7620u2_iic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\paj7620u2_iic.c</FilePath>
             </File>
           </Files>
         </Group>

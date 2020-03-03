@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=E:/STM32/PAJ7620/F767VGT/USBTest/Inc
+HeaderPath=E:/Stm32/PAJ7620/F767VGT/Inc
 HeaderFiles=usb_device.h;usbd_conf.h;usbd_desc.h;stm32f7xx_it.h;stm32f7xx_hal_conf.h;main.h;
-SourcePath=E:/STM32/PAJ7620/F767VGT/USBTest/Src
+SourcePath=E:/Stm32/PAJ7620/F767VGT/Src
 SourceFiles=usb_device.c;usbd_conf.c;usbd_desc.c;stm32f7xx_it.c;stm32f7xx_hal_msp.c;main.c;
 
 [PreviousLibFiles]
