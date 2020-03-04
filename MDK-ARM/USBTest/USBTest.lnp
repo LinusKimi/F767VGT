@@ -1,12 +1,12 @@
 --cpu Cortex-M7.fp.dp
 "usbtest\startup_stm32f767xx.o"
+"usbtest\dev_config.o"
 "usbtest\main.o"
 "usbtest\usb_device.o"
 "usbtest\usbd_conf.o"
 "usbtest\usbd_desc.o"
 "usbtest\stm32f7xx_it.o"
 "usbtest\stm32f7xx_hal_msp.o"
-"usbtest\dev_config.o"
 "usbtest\stm32f7xx_hal_pcd.o"
 "usbtest\stm32f7xx_hal_pcd_ex.o"
 "usbtest\stm32f7xx_ll_usb.o"

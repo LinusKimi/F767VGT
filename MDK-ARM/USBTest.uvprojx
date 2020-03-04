@@ -339,7 +339,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F767xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;  ../Drivers/STM32F7xx_HAL_Driver/Inc;  ../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy;  ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc;  ../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc;  ../Drivers/CMSIS/Device/ST/STM32F7xx/Include;  ../Drivers/CMSIS/Include</IncludePath>
+              <IncludePath>../Inc;           ../Drivers/STM32F7xx_HAL_Driver/Inc;           ../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy;           ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc;           ../Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc;           ../Drivers/CMSIS/Device/ST/STM32F7xx/Include;           ../Drivers/CMSIS/Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -394,6 +394,21 @@
           <GroupName>Application/User</GroupName>
           <Files>
             <File>
+              <FileName>DEV_Config.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\DEV_Config.c</FilePath>
+            </File>
+            <File>
+              <FileName>DEV_Config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Inc\DEV_Config.h</FilePath>
+            </File>
+            <File>
+              <FileName>PAJ7620U2.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Inc\PAJ7620U2.h</FilePath>
+            </File>
+            <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/main.c</FilePath>
@@ -422,21 +437,6 @@
               <FileName>stm32f7xx_hal_msp.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/stm32f7xx_hal_msp.c</FilePath>
-            </File>
-            <File>
-              <FileName>DEV_Config.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Src\DEV_Config.c</FilePath>
-            </File>
-            <File>
-              <FileName>DEV_Config.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Inc\DEV_Config.h</FilePath>
-            </File>
-            <File>
-              <FileName>PAJ7620U2.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Inc\PAJ7620U2.h</FilePath>
             </File>
           </Files>
         </Group>
