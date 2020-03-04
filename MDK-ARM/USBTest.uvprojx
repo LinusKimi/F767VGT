@@ -424,29 +424,19 @@
               <FilePath>../Src/stm32f7xx_hal_msp.c</FilePath>
             </File>
             <File>
-              <FileName>paj7620u2.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Inc\paj7620u2.h</FilePath>
-            </File>
-            <File>
-              <FileName>paj7620u2_cfg.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Inc\paj7620u2_cfg.h</FilePath>
-            </File>
-            <File>
-              <FileName>paj7620u2_iic.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Inc\paj7620u2_iic.h</FilePath>
-            </File>
-            <File>
-              <FileName>paj7620u2.c</FileName>
+              <FileName>DEV_Config.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Src\paj7620u2.c</FilePath>
+              <FilePath>..\Src\DEV_Config.c</FilePath>
             </File>
             <File>
-              <FileName>paj7620u2_iic.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Src\paj7620u2_iic.c</FilePath>
+              <FileName>DEV_Config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Inc\DEV_Config.h</FilePath>
+            </File>
+            <File>
+              <FileName>PAJ7620U2.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Inc\PAJ7620U2.h</FilePath>
             </File>
           </Files>
         </Group>

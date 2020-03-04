@@ -24,7 +24,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "paj7620u2.h"
+#include "DEV_Config.h"
+#include "PAJ7620U2.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -60,10 +61,28 @@ static void MX_I2C1_Init(void);
 static void MX_SPI1_Init(void);
 /* USER CODE BEGIN PFP */
 
+uint16_t spiData[1800] = {0};
+uint8_t  sendBuf[1800] = {0};
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+unsigned char PAJ7620U2_init()
+{
+	unsigned char i,State;
+	DEV_Set_I2CAddress(PAJ7620U2_I2C_ADDRESS);
+	DEV_Delay_ms(5);
+	State = DEV_I2C_ReadByte(0x00);												//Read State
+	if (State != 0x20) 
+		return 0;																						//Wake up failed
+	DEV_I2C_WriteByte(PAJ_BANK_SELECT, 0);								//Select Bank 0
+	for (i=0;i< Init_Array;i++)
+	{
+		 DEV_I2C_WriteByte(Init_Register_Array[i][0], Init_Register_Array[i][1]);//Power up initialize
+	}
+	return 1;
+}
 
 /* USER CODE END 0 */
 
@@ -102,8 +121,19 @@ int main(void)
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
 
-	HAL_I2C_Master_Transmit(&hi2c1, PAJ7620_ID, NULL, 0, HAL_MAX_DELAY);
+	if(!PAJ7620U2_init())
+	{	
+        while(1)
+            __NOP();
+	}
+	DEV_I2C_WriteByte(PAJ_BANK_SELECT, 0);																	//Select Bank 0
+	for (int i = 0; i < Gesture_Array_SIZE; i++)
+	{
+		DEV_I2C_WriteByte(Init_Gesture_Array[i][0], Init_Gesture_Array[i][1]);//Gesture register initializes
+	}
 
+    HAL_SPI_Receive_DMA(&hspi1, (uint8_t *)spiData,1800);
+    
   /* USER CODE END 2 */
 
   /* Infinite loop */
